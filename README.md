@@ -42,4 +42,4 @@ Inspired by Doctor Strange, built for students and developers.
 This project is built entirely by me, Alok Kulkarni.  
 If you use or showcase Sanctum Sanctorum publicly, please make sure to **give proper credit**. A shoutout, mention, or link back is genuinely appreciated!
 
-Let’s build and share with integrity. 💙
+Let’s build and share with integrity. Contributions Accepted
