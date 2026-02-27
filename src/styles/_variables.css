@@ -1,0 +1,86 @@
+:root {
+  /* Colors */
+  --color-primary: #6a0dad; /* deep purple */
+  --color-primary-hover: #7f39fb;
+  --color-secondary: #b8860b; /* gold */
+  --color-accent: #dc143c; /* crimson */
+  
+  /* Dark mode colors */
+  --color-bg-primary: #0a0a23; /* very dark blue/purple */
+  --color-bg-secondary: #1a0a3a; /* dark mystical purple */
+  --color-bg-tertiary: #2e0a4f; /* deeper purple */
+  --color-bg-input: #1a0a3a;
+  
+  /* Text colors */
+  --color-text-primary: #f5e6ca; /* light parchment */
+  --color-text-secondary: #d4af37; /* gold */
+  --color-text-tertiary: #b8860b; /* gold darker */
+  --color-text-placeholder: #a67c00;
+  --color-text-accent: #c48b10; /* glowing orange */
+  --color-text-youtube: #dc143c; /* crimson */
+  --color-text-link: #7f39fb; /* bright purple */
+  --color-text-note: #10b981;
+  
+  /* Border colors */
+  --color-border: #4b0082; /* indigo */
+  --color-border-hover: #7f39fb;
+  
+  /* Border radius */
+  --border-radius-sm: 0.25rem;
+  --border-radius: 0.375rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-xl: 1rem;
+  --border-radius-full: 9999px;
+  
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 0 5px 1px rgba(106, 13, 173, 0.7);
+  --shadow: 0 0 10px 2px rgba(127, 57, 251, 0.8), 0 0 10px 5px rgba(220, 20, 60, 0.6);
+  --shadow-md: 0 0 10px 5px rgba(127, 57, 251, 0.9), 0 0 10px 10px rgba(220, 20, 60, 0.8);
+  --shadow-lg: 0 0 10px 10px rgba(127, 57, 251, 1), 0 0 10px 10px rgba(220, 20, 60, 1);
+  
+  /* Font sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+.light-mode {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #6872c4;
+  --color-bg-tertiary: #e9ecef;
+  --color-bg-input: #ffffff;
+
+  --color-text-primary: #ffe600;
+  --color-text-secondary: #c3d42a;
+  --color-text-tertiary: #495057;
+  --color-text-placeholder: #6c757d;
+  --color-text-accent: #1f22aa;
+  --color-text-youtube: #e00a1f;
+  --color-text-link: #161c70;
+  --color-text-note: #0f551e;
+
+  --color-border: #ced4da;
+  --color-border-hover: #80bdff;
+}

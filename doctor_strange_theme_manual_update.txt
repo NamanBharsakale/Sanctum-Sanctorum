@@ -1,0 +1,20 @@
+/* Light mode CSS variables to be merged into src/styles/_variables.css */
+
+.light-mode {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8f9fa;
+  --color-bg-tertiary: #e9ecef;
+  --color-bg-input: #ffffff;
+
+  --color-text-primary: #222222;
+  --color-text-secondary: #6c757d;
+  --color-text-tertiary: #495057;
+  --color-text-placeholder: #6c757d;
+  --color-text-accent: #dc3545;
+  --color-text-youtube: #c82333;
+  --color-text-link: #007bff;
+  --color-text-note: #218838;
+
+  --color-border: #ced4da;
+  --color-border-hover: #80bdff;
+}

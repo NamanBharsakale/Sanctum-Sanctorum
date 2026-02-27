@@ -1,0 +1,42 @@
+Supabase User Authentication and Entries Management Guide
+
+1. Supabase Project Setup:
+   - Create a Supabase project at https://app.supabase.com.
+   - Obtain your API URL and anon public key.
+   - Add these to your React app's .env file as:
+     REACT_APP_SUPABASE_URL=your_supabase_url
+     REACT_APP_SUPABASE_ANON_KEY=your_anon_public_key
+
+2. Database Schema:
+   - Use a single 'entries' table to store all user entries.
+   - Add a 'user_id' column (UUID) to the 'entries' table to associate entries with users.
+   - Example SQL to add 'user_id' column:
+     ALTER TABLE entries ADD COLUMN user_id uuid;
+     ALTER TABLE entries ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES auth.users(id);
+
+3. User Authentication:
+   - Use Supabase Auth for user registration, login, and logout.
+   - Registration creates a new user in Supabase Auth.
+   - Login authenticates existing users.
+   - Use supabase.auth.signUp() for registration.
+   - Use supabase.auth.signInWithPassword() for login.
+   - Use supabase.auth.signOut() for logout.
+
+4. React App Integration:
+   - Track authenticated user state using supabase.auth.getSession() and onAuthStateChange().
+   - Fetch entries filtered by user_id = authenticated user's id.
+   - When adding/editing/deleting entries, include user_id to ensure user-specific data.
+   - Show login and registration forms as needed.
+   - Disable entry actions if user is not logged in.
+
+5. Important Notes:
+   - Do NOT create separate tables per user; use user_id filtering in a single table.
+   - Keep UI and CSS consistent; only backend auth logic changes.
+   - Restart your development server after updating environment variables.
+
+6. Testing:
+   - Test registration, login, logout flows.
+   - Verify entries are user-specific.
+   - Check UI updates based on auth state.
+
+This guide ensures secure, scalable user authentication and data management using Supabase.

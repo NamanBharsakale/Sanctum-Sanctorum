@@ -34,12 +34,12 @@ Inspired by Doctor Strange, built for students and developers.
 
 [🔗 Visit Sanctum Sanctorum](https://sanctum-infinitum.vercel.app)
 
+## 🧑‍💻 Built By
+
+**Naman Bharsakale & Alok Kulkarni** – CSE student @ WCE  
+Crafted with curiosity, code, and a pinch of MCU magic.  
 
 ---
-
-## 🙏 Credits
-
-This project is built entirely by me, Alok Kulkarni.  
 If you use or showcase Sanctum Sanctorum publicly, please make sure to **give proper credit**. A shoutout, mention, or link back is genuinely appreciated!
 
-Let’s build and share with integrity. Contributions Accepted
+Let’s build and share with integrity. 💙

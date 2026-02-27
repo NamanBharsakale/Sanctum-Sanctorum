@@ -1,0 +1,28 @@
+To replace the logo SVG in src/components/Header.js with the Eye of Agamotto image located at src/assets/Sanctum_Logo.jpg, update the Header component as follows:
+
+1. Remove the existing SVG logo markup inside the div with className "logo-icon".
+
+2. Add an img tag referencing the image path as a string, without importing it, like this:
+
+```jsx
+<div className="logo-icon">
+  <img src="/src/assets/Sanctum_Logo.jpg" alt="Eye of Agamotto" style={{ width: '24px', height: '24px', borderRadius: '50%' }} />
+</div>
+```
+
+3. The updated Header component snippet:
+
+```jsx
+<div className="logo">
+  <div className="logo-icon">
+    <img src="/src/assets/Sanctum_Logo.jpg" alt="Eye of Agamotto" style={{ width: '24px', height: '24px', borderRadius: '50%' }} />
+  </div>
+  <h1 className="logo-text">Sanctum Sanctorum</h1>
+</div>
+```
+
+4. Ensure the image file is accessible at the specified path.
+
+This approach avoids import issues and works with most React setups that serve static assets from the public or src folder.
+
+Make sure to restart the development server if needed to pick up the new image.
